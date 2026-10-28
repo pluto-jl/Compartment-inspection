@@ -1,0 +1,18 @@
+以下为原电脑经过验证的环境记录，不是保证所有版本均可从当前公共源取得的安装锁文件：
+Python 3.12.6
+torch 2.14.0+cu126
+torchvision 0.29.0+cu126
+CUDA runtime 12.6
+numpy 2.5.3
+opencv-python 5.0.0.93
+pillow 12.2.0
+scipy 1.18.1
+matplotlib 3.11.0
+pyyaml 6.0.3
+tqdm 4.70.1
+requests 2.34.2
+psutil 7.2.2
+polars 1.44.2
+ultralytics-thop 2.1.6
+隔离Ultralytics源码 8.4.161（随包提供）
+GPU NVIDIA GeForce RTX 4060 Laptop GPU

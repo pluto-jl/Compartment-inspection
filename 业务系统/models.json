@@ -1,0 +1,8 @@
+[
+  {
+    "key": "improved",
+    "label": "定稿 CSEdgeGate 微滴模型",
+    "path": "../模型/best.pt",
+    "research_status": "1031张训练、23张开发；AI/来源标注，非独立人工验收或新设备盲测"
+  }
+]

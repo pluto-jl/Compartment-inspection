@@ -1,0 +1,23 @@
+{
+  "name": "巡检者 定稿CSEdgeGate微滴检测",
+  "weight": "模型/best.pt",
+  "sha256": "f6c4f73e9bf20ffe2b1e29a3651d948074242839429ef6df2a14ee6b0eefc4d3",
+  "train_images": 1031,
+  "development_images": 23,
+  "classes": [
+    "droplet"
+  ],
+  "imgsz": 640,
+  "conf": 0.25,
+  "nms_iou": 0.5,
+  "scope": "AI/source labelled development prototype; not independent test or robot integration",
+  "portable_runtime": "Not included in light package; use existing compatible environment or install dependencies",
+  "gpu": "Requires compatible NVIDIA driver; same-computer relocation tested, different-PC validation pending",
+  "distribution_source_changes": [
+    "models.json points only to included current model",
+    "sample input points to included training image",
+    "default model improved",
+    "launcher uses package-relative portable runtime and port7862"
+  ],
+  "package_edition": "light_without_runtime"
+}

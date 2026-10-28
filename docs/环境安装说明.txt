@@ -1,0 +1,24 @@
+运行检测需要的环境
+
+若只是看图片、标签、保存结果或报告：直接打开开始查看.html，无需安装下面内容。
+
+若组员已有PyTorch/OpenCV环境：激活环境后，进入包目录执行：
+python 检查运行环境.py
+python 运行工作台.py
+
+若没有环境：建议使用Python 3.12的独立环境，避免改动其他工程。
+1. 安装Python后，在包目录创建环境：
+py -3.12 -m venv .venv
+2. 按PyTorch官方安装页面，选择Windows、Pip、Python与适合该电脑的CUDA平台，把页面给出的pip命令改为使用 .venv\Scripts\python.exe -m pip 执行。
+官方入口：https://pytorch.org/get-started/locally/
+有NVIDIA GPU时选择相应CUDA构建，并按官网方法检查torch.cuda.is_available()。本包不猜测对方电脑的驱动版本。
+3. 安装其余依赖：
+.venv\Scripts\python.exe -m pip install -r requirements-inference.txt
+4. 检查环境：
+.venv\Scripts\python.exe 检查运行环境.py
+5. 双击启动GPU工作台.bat；或在终端运行：
+.venv\Scripts\python.exe 运行工作台.py
+
+不要另用pip安装并替换本包的Ultralytics源码；模型需要配套vendor与csedgegate.py。普通依赖清单给出基础下限，不保证所有未来版本组合兼容，完整版本参见“原电脑环境版本.txt”。跨电脑部署仍需实际试运行。
+
+无NVIDIA GPU可明确用CPU参考检测示例；GPU工作台默认仍要求GPU。
